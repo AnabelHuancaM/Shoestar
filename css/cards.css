@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    background-image: url(../img/fondo.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    width: 260px;
+    height: 140px;
+    border: 1px solid;
+    border-radius: 25px;
+    padding: 15px;
+    background: linear-gradient(
+        to right bottom,
+        rgba(255,255,255,0.555),
+        rgba(255,255,255,0.192)
+    );
+    backdrop-filter: blur(5px);
+    overflow: hidden; /*ocultar lo que sobresalga*/
+}
+
+.card::before{
+    content: "";
+    width: 30%;
+    background-color: rgba(255, 255, 255, .5);
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: skew(-20deg) translateX(400%);
+    transition: .5s;
+}
+
+.card:hover::before{
+    transform: skew(-20deg) translateX(-130%);
+}
+
+.bank-name{
+    text-align: end;
+}
+
+.sim{
+    width: 40px;
+    position: relative;
+    top: -26px;
+}
+
+.numero{
+    position: relative;
+    top: -37px;
+    left: 5px;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.logo-visa{
+    width: 54px;
+}
+
+.detalles{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: -70px;
+    left: 5px;
+    font-size: 19px;
+}
