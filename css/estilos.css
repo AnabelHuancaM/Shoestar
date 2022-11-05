@@ -458,8 +458,51 @@ label{
     width: 100%;
 }
 
+/*testimonial-------------*/
+.testimonios{
+    padding-top: 20px;
+}
+
+.testim{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    align-items: center;
+}
+
+.testim-cont{
+    width: 150px;
+    background: linear-gradient(45deg, #ba42cac2 0%, #4c3aeec2 100%);
+    border-radius: 10px;
+    min-width: 400px;
+    padding: 20px;
+    margin: 10px;
+    position: relative;
+}
+
+.text{
+    text-align: center;
+    margin: 50px 10px;
+}
+
+.text-name{
+    font-weight: bold;
+}
+
+.test-img{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40px; /*sobresalga hacia arriba*/
+}
+
+/*footer----------*/
 footer{
-    background: linear-gradient(45deg, #331df7c2 0%, #8215ffc7 100%);
+    background: linear-gradient(45deg, #331df7c2 0%, #331df7c2 100%);
     text-align: center;
     font-size: 15px;
     color: #fff;
